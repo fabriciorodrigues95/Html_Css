@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width:300px;
+            height: 300px;
+        }
+        .box-one{
+            background-color: cyan;
+            
+        }
+        .box-two{
+            background-color: yellow;
+            position: absolute;
+            opacity: .9;
+            /* Posicionamento (top right bottom left) */
+            /* inset: 0 0 0 0;*/
+            /* Equivalente o que está acima */
+            /* short hand */
+            /* inset: 0; */
+            /* Maneira antiga de posicionar o elemento ao centro*/
+            /* top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: 50px; */
+
+            /* Maneira atual e recomendada- uma delas */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* Posicionando elemento interno da caixa - grid */
+            /* display: grid;
+            place-items: center; */
+
+            /* Posicionamento do elemento interno da caixa flex-box */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Hello World</p>
+        <div class="box box-one">B1</div>
+        <p>Hello World</p>
+        <div class="box box-two">B2</div>
+        <p>Hello World</p>
+        
+    </div>
+</body>
+</html>

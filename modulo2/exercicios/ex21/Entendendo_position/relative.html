@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo position relative</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+        body{
+            background-color: rgb(98, 105, 105);
+        }
+        header{
+            max-width: auto;
+            height: 90px;
+            background-color: white;
+        }
+        header > .navegacao {
+            /* background-color: aqua; */
+            position: relative;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        header > .navegacao> p{
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .texto{
+            background-color: white;
+            max-width: 1200px;
+            margin: auto;
+
+        }
+        .texto >article{
+            width: 800px;
+            height: auto;
+            margin: auto;
+
+        }
+
+        .texto >article p{
+            color: black;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navegacao">
+            <p>superlógica</p>
+            <p>sensedia</p>
+            <p>syhus</p>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <!-- Banner -->
+            <img src="../praticas_fundamentos_fora_curso/img/metricas.jpg" alt="" width="100%" height="400">
+        </section>
+        <section class="texto">
+            <!-- Texto -->
+            <article>
+                <h1>Show</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, libero dolore quam cupiditate et quo similique corrupti inventore quis autem illo itaque deserunt, harum aliquid aperiam. Repellendus doloremque cumque dolor.</p>
+                <h2>Feito</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque possimus quae voluptatibus eum inventore atque quisquam facere, eaque facilis soluta enim explicabo voluptatum ea, tempora labore. Molestias, hic. Delectus, atque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, corrupti cumque explicabo veritatis quidem earum rem, aliquam asperiores illum unde in eligendi aliquid odio quae ducimus voluptas dolorum tempore eveniet?</p>
+                <h2>Fatos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia adipisci debitis ut quam, voluptates delectus expedita dicta consequatur consequuntur ducimus animi officiis neque, dolores eos? Officiis illum a sit perferendis!</p>
+                <h2>Teste</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ducimus suscipit sint tempora nostrum dolore veritatis ipsam, natus est nemo asperiores itaque blanditiis neque dolorem, mollitia enim fugit necessitatibus alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptate, odit optio maxime iure esse, quidem totam ullam minima quaerat cupiditate unde. Debitis veniam necessitatibus accusantium magni quae neque nobis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus soluta ab animi quae quia, aliquid tempora error ut corporis vero cum facere, architecto aliquam earum! Nihil saepe dicta provident. Voluptate.</p>
+                
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Produzido por fabricio r gomes</p>
+    </footer>
+</body>
+</html>

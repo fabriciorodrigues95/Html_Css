@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div:hover/* isso é uma pseudo-classe */{
+            background-color: aqua;
+        }
+        #val:active{
+            background-color: blueviolet;
+        }
+        #val1:checked{
+            background-color: blueviolet;
+        }
+        #va2:active{
+            background-color: blueviolet;
+        }
+        p:empty{
+            background: #ff0000;
+            width: 100px;
+            height: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <div id="val">04</div>
+    <div id="val1">05</div>
+    <div id="val2">06</div>
+    <p></p>
+</body>
+</html>

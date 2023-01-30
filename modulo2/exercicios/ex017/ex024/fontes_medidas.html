@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../../aprendendo_css.ico" type="image/x-icon">
+    <title>Trabalhando com fontes</title>
+    <style>
+       h1{
+        /*
+         Por padrão a fonte é 16, o (em) funciona da seguinte forma 16*2 = 32, então minha fonte na verdade é 32 pontos. e 
+         */
+        font-size: 2em;
+
+       }
+       h2{
+        font-size: 20px;
+
+       }
+     
+    </style>
+</head>
+
+<body>
+    <h1>Aprendendo sobre medidas</h1>
+    <h2>Temos as seguintes medidas:</h2>
+    <ul>
+        <li type="square">Medidas absolutas</li>
+        <ul>
+            <li>cm</li><!-- centimetro -->
+            <li>mm</li><!-- milímetro -->
+            <li>in</li><!-- polegada -->
+            <li>px</li><!-- pixel -->
+            <li>pt</li><!-- ponto -->
+            <li>pc</li><!-- paica -->
+        </ul>
+        <p>Para uso das medidas absolutas é recomendado usar px.</p>
+        <br>
+        <li>Medidas relativas </li>
+        <ul>
+            <li>em</li><!-- Tamanho relativo a fonte (M)-->
+            <li>ex</li><!-- Tamanho relativo a x, altura (letra x)-->
+            <li>rem</li><!-- Tamanho relativo a fonte porém ao root (body)  -->
+            <li>vw</li><!-- Largura da sua tela  -->
+            <li>vh</li><!-- Altura da tela -->
+            <li>%</li><!-- Porcentagem -->
+        </ul>
+        <p>Para usar em medidas relativas é aconselhado usar o em.</p>
+    </ul>
+    <p>A dica é usar o em em vez do px, mas não é errado, pois na documentação é recomendado uma ou outra. </p>
+</body>
+
+</html>

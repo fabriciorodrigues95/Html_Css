@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../aprendendo_css.ico" type="image/x-icon">
+    <title>Degradê com css</title>
+    <style>
+        /* Configuração globais na css */
+        *{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+           
+            /* Deixando o texto fixo */
+            background-attachment: fixed;
+        }
+        h1{
+            
+            height: 500px;
+            width: 100%;
+             /*
+             Pode ser usado em graus: 10deg
+             ou
+             to left,to right,to top, to bottom;
+             */
+             background-image: linear-gradient(to bottom, #F8F8F8,#8619FE ,#F8FFFC,#FF2A6F,#FEAF34,#FF5A28);
+        }
+        h2{
+            /* Testando o radial-gradient */
+            background-image: radial-gradient(circle,#F8F8F8,#8819FE,#D005DD,#F9FAFB,#FE17A2,#FBF2F3,#FE227D,#FF493F,#FEC901);
+        }
+        h3{
+            height: 500px;
+            width: 100%;
+             /* Colocando porcentagem depois da cor */
+            background-image: radial-gradient(circle, #F8F8F8 10%,#8619FE 20%,#F8FFFC,#FF2A6F ,#FEAF34 ,#FF5A28 );
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo Degradê com Css</h1>
+    <h2>Testando o gradiente no modo circulo</h2>
+    <h3>Testando os valores com porcentagem</h3>
+
+</body>
+</html>

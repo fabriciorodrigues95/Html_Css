@@ -1,0 +1,203 @@
+/* @charset 'UTF-8'; */
+@font-face {
+  font-family: "idroid";
+  src: url(fontes/idroid.otf) format(opentype);
+}
+
+@font-face {
+  font-family: "fonth1";
+  src: url(fontes/Fruit\ Days.otf) format(opentype);
+}
+
+/* Configuração para todo site */
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Corpo do site  */
+body {
+  background-color: rgb(186, 209, 209);
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+#topo {
+  background-image: linear-gradient(
+    to top,
+    #3ad47e,
+    #2da161,
+    #1e6c41,
+    #1a5c37,
+    #268a53
+  );
+  width: 100%;
+}
+
+/* Título dentro do header - topo h1 */
+#cabecalho h1 {
+  color: #f9faf9;
+  font-size: 2em;
+  font-family: "fonth1";
+  text-align: center;
+  padding: 17px;
+  padding-bottom: 20px;
+}
+/* Dentro do header > p */
+#cabecalho p {
+  width: 400px;
+  color: #85b399;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*  Link parte do header e cabecalho >> a */
+#cabecalho #navegacao a {
+  text-decoration: none;
+  color: #cde7d7;
+}
+
+/* Links efeito >> a */
+#cabecalho #navegacao a:hover{
+
+    background-color: #3ad47e;
+
+}
+/* Nav parte do header e cabecalho */
+#cabecalho #navegacao ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* main */
+#conteudo {
+  background-color: #85e0ad;
+  margin-top: -11px;
+}
+
+/* main */
+main > .conteudo_princial_main {
+  width: 900px;
+  background-color: rgb(223, 216, 216);
+  margin: 0 auto;
+  padding-top: 5px;
+
+}
+
+/* Dentro do main >h1 */
+main > .conteudo_princial_main #conteudo_titulo h1 {
+  font-size: 26.5px;
+  font-family: "idroid", sans-serif;
+  color: #195736;
+  padding: 5px 10px 0 10px;
+  margin: 10px 10px 10px 10px;
+}
+/* Dentro do main > .conteudo_princial_main > alinhamentotxt pertece a todas as tag p */
+.conteudo_princial_main  .alinhamentotxt{
+    text-align: justify;
+    text-indent: 2.5em;
+    word-wrap: break-word;
+    padding: 10px;
+    margin: 3px;
+}
+
+/* Classe que modifica todos os subtítulos do conteúdo principal */
+.alinhamento {
+  font-size: 20px;
+  font-family: "idroid", sans-serif;
+  background-color: #aae0c2;
+  color: #2a6947;
+  padding: 5px 10px 0 10px;
+  margin: 10px 10px 10px 10px;
+}
+/* Modificado o posicionamento, pertence a section sec_conteudo_principa_l */
+#sec_conteudo_principa_l .img_dan_droids{
+    margin-left: 10px;
+
+}
+/* Modificado o posicionamento, pertence a section sec_conteudo_principa_l */
+#sec_conteudo_principa_l .img_irina{
+    margin-left: 20px;
+}
+/* Modificado o posicionamento, pertence a section sec_conteudo_principa_l */
+#sec_conteudo_principa_l .bugdroid{
+    margin-left: 25%;
+}
+/* Video */
+#video{
+    background-color: #1a5c37;
+    padding: 10px;
+}
+/* Configurado o vídeo */
+#video > iframe{
+    margin-left: 6%;;
+
+}
+/* Pertence a section principal */
+#conteudo_listas_referncias{
+   
+    background-color:white;
+    padding: 10px;
+}
+/* Pertence a section principal com o nome >#conteudo_listas_referncias */
+#conteudo_listas_referncias_1 {
+    background-color: #86e4ae;
+    border-radius: 5px;
+    
+}
+/* Pertence a section principal #conteudo_listas_referncias> ajustando o h3 */
+#conteudo_listas_referncias_1 h3{
+    background-color: #268a53;
+    padding: 10px;
+    color: white;
+}
+/* Pertence a section principal #conteudo_listas_referncias> p */
+#conteudo_listas_referncias_1 p{
+    padding: 10px;
+    
+}
+/* Pertence a section #conteudo_listas_referncias> article >listas  */
+article#listas {
+    height: 205px;
+}
+/* /* Pertence a section #conteudo_listas_referncias> article >listas > p */
+article#listas p{
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
+/* Pertence a uma section com classe list */
+.list{
+    width: 600px;
+    display: inline-block;
+    padding-left: 10px;
+}
+/* Pertence a uma section com classe list > class div_list > ul */
+ul.div_list {
+    position: relative;
+    left: 300px;
+    bottom: 146px;
+}
+/* Trabalhando com seletores > Pertence a uma section com classe list > class icon */
+.list .icon::before{
+    content: '✔';
+}
+/* Pertece a section conteudo_listas_referncias_2 > article > class texto2 */
+article.texto2{
+    padding-top: 11px;
+    padding-bottom: 10px;
+} 
+
+/*  Pertence a section conteudo_listas_referncias_2 > class alin_lista_text modificando a tag p*/
+#conteudo_listas_referncias_2.alin_lista_text p{
+    text-indent: 1.5em;
+}
+
+/* footer */
+#rodape {
+  background-color: #195736;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

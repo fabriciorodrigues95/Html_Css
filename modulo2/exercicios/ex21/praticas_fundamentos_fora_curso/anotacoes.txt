@@ -1,0 +1,84 @@
+#Box Model
+-Os elementos HTML  saõ enxergados com caixas.
+- Retangulares.
+
+É composto de 4 partes, que definem um limite para o conteúdo (content)
+
+1.Margin
+2.Border
+3.Padding
+4.content(text,image,video)
+
+
+ /* Mudar limite da caixa */
+    box-sizing: border-box;/* box-sizing: tamanho da caixa 
+*/
+
+Se usar o box-sizing:content-box -> ele soma os valores que fores colocados.
+ width: 500px;
+ height: 100px;
+ box-sizing: content-box;
+ padding-top: 100px;
+ padding-right: 200px;
+ padding-bottom: 700px;
+
+ Largura: 500+200 = 700
+ Altura: 100+100+700 = 900p
+Total:700*900
+Que antes era de 500*100
+
+Usando o box-sizing:border-box;
+width: 500px;
+ height: 100px;
+ box-sizing: border-box;
+ padding-top: 100px;
+ padding-right: 200px;
+ padding-bottom: 700px;
+
+Largura: 500-200=300
+Altura: 100-100-700= 0-700=-700
+Ou seja aqui ultrapssou os limites ficando com -700, mas isso não impede de realizar o ajuste do tamanho mesmo que ultrapasse os limites, observando,podemos ver que estaria com quebra essa página ou seja um bug, para resolver o problema.
+
+Criação de uma nova div.
+Código html:
+
+ <div>
+       <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod impedit, eveniet culpa excepturi, magni veniam voluptatum labore nostrum nisi modi pariatur ut alias ducimus et laboriosam inventore atque dicta consequuntur?</div>
+    </div>
+
+Código css:
+div{
+     /* content : width & height */
+     width: 500px;
+     height: 500px;
+
+     /* Evitar que estrapole os tamanhos definidos*/
+    overflow: hidden;
+
+    /* Mudar limite da caixa */
+    box-sizing: border-box;/* box-sizing: borda do tamanho da caixa */
+
+}
+.content{
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+
+    /* padding:preenchimento */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+
+}
+Assim que quando queremos usar tanto margin quando padding
+/*
+    top
+    right
+    bottom
+    left 
+     */
+    padding:100px 200px 100px 200px
+    

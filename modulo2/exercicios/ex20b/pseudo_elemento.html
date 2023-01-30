@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* Seletores personalizados
+            #  = ID
+            .  = CLASSES
+            :  = PSEUDO-CLASSES
+            :: = PSEUDO-ELEMENTOS
+            > = REFERENCIANDO O ELEMENTO FILHO
+        */
+        body{
+            font: normal 1.2em Arial,Helvetica, sans-serif;
+            color: black;
+        }
+        a{
+            color: darkblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: darkgoldenrod;
+        }
+        .especial{
+            color: black;
+            background-color: rgb(196, 85, 85);
+        }
+        /* Aprendendo pseudo-elementos */
+        /* Os psudo-elemntos funcionam para o elementos, id e classes */
+        .especial::before{
+            content:'⇒';
+            text-decoration: none;
+           
+        }
+        .especial::after{
+            content: '⇐';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+        <li><a href="http://gustavoguanabara.github.io" target="_blank" rel="external">Repositório Github</a></li>
+        <li><a href="http://youtube.com/cursoemvideo/" target="_blank" rel="external" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" rel="external">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

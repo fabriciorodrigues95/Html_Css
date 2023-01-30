@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../../../aprendendo_css.ico"
+      type="image/x-icon"
+    />
+    <title>Aprendendo sobre as caixas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      body {
+        background-color: gray;
+        color: white;
+      }
+
+      header {
+        min-height: 100px;
+        background-color: rgb(84, 85, 85);
+      }
+
+      header > h1 {
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      header > nav > ul li {
+        display: inline-block;
+        padding: 10px 0px 10px 20px;
+      }
+
+      main {
+        background-color: blueviolet;
+        max-width: 800px;
+        min-width: 320px;
+        margin:  auto;
+        padding: 10px;
+      }
+
+      main > section > h1 {
+        padding-top: 15px;
+        margin: 0;
+        font-size: 2em;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      main> section> h2{
+        padding: 10px 0px ;
+        font-weight: normal;
+        font-size: 1.5em;
+      }
+
+      section> p{
+        text-align: justify;
+        text-indent: 30px;
+        padding: 10px;
+        font-style: normal;
+        font-size: 1.3em;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 2em;
+      }
+      section strong{
+        font-weight: bold;
+        color: darkblue;
+      }
+
+      figure {
+        margin: auto;
+        width: 250px;
+      }
+
+      .imagem_codigo img {
+        max-width: 280px;
+      }
+      footer {
+        text-align: center;
+        background-color: darkgray;
+        padding: 10px;
+
+      }
+    footer img{
+        padding-top: 10px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Aprendendo sobre caixas</h1>
+      <nav>
+        <ul>
+          <li>Margin</li>
+          <li>Outline</li>
+          <li>Border</li>
+          <li>Padding</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Sobre as caixas</h1>
+        <h2>Anatomia de uma caixa</h2>
+        <p>
+          Vamos analisar como uma caixa vai ser apresentada por todos os
+          navegadores. Olhe atentamente o diagrama a seguir, que é exatamente o
+          já citado modelo de caixa:
+        </p>
+        <figure class="imagem">
+          <img src="../box_model.png" alt="box_model" />
+        </figure>
+        <p>
+          Tudo começa a partir do conteúdo (content), que representamos acima
+          com o<strong> bla bla bla…</strong> Por padrão, toda caixa é composta apenas pelo
+          conteúdo e não possui <strong>padding</strong>, nem <strong>border</strong>, nem <strong>outline</strong> e nem<strong> margin</strong>.
+          Uma exceção curiosa é o elemento &lt;body &gt; que já vem com uma
+          margin de 8px.
+        </p>
+        <p>
+          Todo conteúdo possui uma largura (width) e uma altura (height) e a
+          esse conjunto de propriedades, damos o nome de box-size (tamanho da
+          caixa). O tamanho da caixa não inclui as medidas de padding, border,
+          outline e margin.
+        </p>
+        <p>
+          Depois do conteúdo e de seu tamanho, vamos nos focar na borda que fica
+          em volta dele. Ela pode ter uma espessura, uma cor e um formato.
+        </p>
+        <p>
+          Entre a borda e o conteúdo - da borda para dentro - temos o
+          preenchimento (padding) e da borda para fora, temos a margem (margin).
+        </p>
+        <p>
+          Entre a margem e a borda, podemos determinar o contorno (outline) que
+          é muito pouco utilizado, mas existe. Ele é um traçado visual que
+          podemos criar fora da borda e o cálculo da sua espessura faz parte da
+          margem estabelecida.
+        </p>
+      </section>
+      <section>
+        <p>
+          Vamos criar um exemplo simples para exemplificar todos esses
+          componentes, configurando as propriedades do modelo de caixa de um
+          título &lt;h1 &gt;. Acompanhe o trecho de código a partir das
+          definições de estilo.
+        </p>
+        <figure class="imagem_codigo">
+          <img src="img/code.PNG" alt="codigo" />
+        </figure>
+        <p>
+          Todas as configurações serão aplicadas ao elemento &lt;h1&gt; , que é
+          uma caixa e foi criado na linha 24 do código acima. As linhas 9 e 10
+          configuram o size da caixa (largura e altura, respectivamente) e fará
+          com que ela tenha 300x50 pixels.
+        </p>
+        <p>
+          As linhas de 12 a 14, configuram uma borda sólida, vermelha e com 10
+          pixels de espessura.
+        </p>
+        <p>
+          A linha 15 vai criar um espaço interno de preenchimento (da borda para
+          dentro) de 20 pixels no elemento e a linha 19 vai criar um espaço
+          externo (da borda para fora) de 50 pixels.
+        </p>
+      </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Fabricio R Gomes</p>
+        <a href="https://linkedin.com/in/fabricio-gomes95" target="_blank" rel="external"><img src="img/icons8-linkedin-circundado-20.png" alt="linkedin"></a>
+        <a href="https://www.instagram.com/fabriciorodrigues.gomes/" target="_blank" rel="external"><img src="img/icons8-instagram-20.png" alt="Instagram"></a>
+        <a href="https://github.com/login" target="_blank" rel="external"><img src="img/icons8-github-30.png" alt="Github" width="20" height="20"></a>
+    </footer>
+  </body>
+</html>

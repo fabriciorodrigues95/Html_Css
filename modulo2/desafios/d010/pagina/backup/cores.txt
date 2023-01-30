@@ -1,0 +1,54 @@
+header
+	
+verde
+#3AD47E
+#2DA161
+#1E6C41
+#1A5C37
+#268A53
+
+Cor do titulo 
+#F9FAF9
+
+Texto
+#85B399
+
+
+Menu
+#A8C1B2
+
+Backgroud do main> section >#85E0AD
+	
+Corpo
+Titulos>h1
+#376F51
+
+Texto
+#BEC3C7
+
+Titulo h2
+color>h2>#2A6947
+backgroud titulo>#E2F6EB
+
+
+
+cor verde na tag p>#54856A
+
+Parte do video 
+Atras do video>backgroud-color> #1A5C38
+
+Parte da Lista
+Titulo h2> backgroud-color> #3CAD71
+color:white
+
+tag p>#54856A
+
+tag ul>li> #54856A
+
+
+Rodapé> 
+backgroud-color#1A5C38
+color:white 
+
+
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../../aprendendo_css.ico" type="image/x-icon">
+    <title>Prática</title>
+    <style>
+        .exemplo{
+            background-color: brown;
+            font-size: 3em;
+            padding: 20px;
+            margin: 20px;
+            border: 3px solid rgb(5, 16, 121);
+        }
+        p{
+            margin: 0;
+           
+        }
+        .exemplo2{
+            background-color: darkgreen;
+            font-size: 3em;
+            padding-left: 20px;
+            padding-right:30px ;
+            padding-top: 50px;
+            padding-bottom: 0;
+            margin: 10px 30px 50px 0;
+            /* border-left-color: blue;
+            border-left-width: 7px;
+            border-top-style: dotted;
+            border-top-color: darkgoldenrod;
+            border-top-width: 7px;
+            border-left-style:dotted ; */
+            border-left: 10px dotted red;
+            border-top:10px dotted red ;
+        }
+        .exemplo3{
+            background-color: darkgoldenrod;
+            font-size: 20px;/* Valor vale para todos os lados */
+            padding: 20px 50px;/* cima-baixo e esquerda-direita */
+            padding: 20px 50px 70px;/* cima, esquerda-direira,baixo */
+            padding: 50px 30px 0 20px;
+        }
+        .exemplo4{
+            background-color: aqua;
+            width: 200px;
+            margin: 50px;
+            font-size: 24px;
+            border: 10px solid black;
+            padding: 20px;
+
+        }
+        .exemplo5{
+
+            background-color: aqua;
+            width: 200px;
+            margin: 50px;
+            font-size: 24px;
+            
+        }
+        /* Técnica antiga */
+        .exemplo5 .interno{
+            border: 10px solid black;
+            padding: 20px;
+
+        }
+        /* Técnica atual - usando o box-sizing */
+        .exemplo6{
+            background-color: aqua;
+            width: 200px;
+            margin: 50px;
+            font-size: 24px;
+            border: 10px solid black;
+            padding: 20px; 
+            box-sizing: border-box;
+            /* Aqui quebra o texto sem passar da borda */
+            word-wrap: break-word;
+        }
+        .exemplo7{
+            background-color: darkgreen;
+            border: 1px solid black;
+            width: 300px;
+            padding: 25px;
+            box-sizing: border-box;
+
+        }
+        nav{
+            margin-top: 25px;
+        }
+        nav li{
+            background-color: lightgray;
+            padding: 25px 5px;
+            width: 100px;
+            display: inline-block;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="exemplo">
+        <p>Parágrafo exemplo</p>
+    </div>
+    <div class="exemplo2">
+        <p>Oi</p>
+    </div>
+    <div class="exemplo3">
+        <p>Aqui é:</p>
+    </div>
+    <div class="exemplo4">
+        <p>Agora vem</p>
+    </div>
+    <div class="exemplo5">
+      <div class="interno">
+        <p>Show de bola o exemplo</p>
+      </div>
+    </div>
+    <div class="exemplo6">
+        exemplo6
+        <br>
+        exemplo6
+        <br>
+        exemplo6
+        <br>
+        exemplo6
+        aaa aaasdf aasda dasadadadadaaaaaaaaa
+
+    </div>
+    <div class="exemplo7">
+        <p>
+            Paddinge  elemento Width: a propriedadewidthespecifica  a  largura  da  área  de  conteúdo  do elemento.A  área  de  conteúdo  é  a  porção  dentro  do padding, da bordae da  margem  de  um  elemento  (Box Model –Modelo de  Caixa  será  visto  mais  adiante).Assim, se  um  elemento  tem um width(uma  largura)especificada,  o paddingconfiguradoseráadicionado  à  largura  total  do  elemento.Isso acarreta,muitas vezes, emum resultado indesejado
+        </p>
+    </div>
+    <nav>
+        <p>Menu de navegação</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+        <p>Fim do menu de navegação</p>
+    </nav>
+</body>
+</html>

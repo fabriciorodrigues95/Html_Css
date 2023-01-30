@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(243, 202, 151, 0.966);
+            margin-bottom: 500px;
+        }
+      
+        .static{
+            width: 80%;
+            height: 200px;
+            position: static;
+            background-color: rgba(255,0,0,.3);
+           
+        }
+        
+        /* ------------------------------------------------------ */
+        /* O que vamos ver que todos tem em comum é o top,left, bottom e right com excessão do static que se não colocar nada ele já fica por padrão*/
+        /* ------------------------------------------------------ */
+
+        /* No relative ele se move entre ele mesmo sem mover os outros elementos da tabela, preservando, como mostrado logo  abaixo. */
+        #relative{
+            width: 50%;
+            height: 200px;
+            position: relative;
+            background-color: rgba(0,255,0,.3);
+            left: 30%;
+            top: 10px;
+            text-align: center;
+        }
+         #relative> p{
+            position: relative;
+            top: 50%;
+            color: gray;
+        }
+        /*  O absolute tem que ser usado com outra position, pois ele depende de um elemento pai, pode ser fixed, relative, sticky */
+        #absolute{/* Agora veja utilizando a classe .relative_teste */
+            width: 50%;
+            height: 100px;
+            position: absolute;
+            background-color: rgba(255, 0, 170, 0.3);
+            bottom: 50px;
+            right: 20%;
+            
+        }
+        #absolute p{
+            text-align: center;
+            padding-top: 20px;
+           
+        }
+        .relative_teste{
+            width: 50%;
+            height: 200px;
+            position: relative;
+            background-color: rgba(17, 0, 255, 0.3);
+            left: 30%;
+            top: 10px;
+            text-align: center;
+        }
+        /* Aqui fica fixo o elemento, sempre seguindo a viewport */
+        #fixed{
+            width: 100%;
+            height: 50px;
+            background-color: rgba(255,255,255,.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+            
+        }
+        #fixed1{
+            width: 100%;
+            height: 50px;
+            background-color: aqua;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            
+        }
+        /* Mescla entre relative e fixed */
+        #sticky{
+            position: sticky;
+            background-color: red;
+            width: 80%;
+            height: 100px;
+            left: 10%;
+            bottom: 0;
+            top: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Aprendendo position static</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nulla a commodi illo labore. Eligendi pariatur nesciunt, accusamus eos ad corporis in aliquam laborum, libero illum eum possimus, repellat quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis dolore corporis nihil architecto laborum tempore sed iste quos, ratione natus illum dolor quo magnam, delectus ad fugit fuga sit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reiciendis eius totam a doloremque ea ab neque optio enim quisquam ipsam harum assumenda unde tempore aliquid, impedit laudantium fugiat dicta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nulla a commodi illo labore. Eligendi pariatur nesciunt, accusamus eos ad corporis in aliquam laborum, libero illum eum possimus, repellat quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis dolore corporis nihil architecto laborum tempore sed iste quos, ratione natus illum dolor quo magnam, delectus ad fugit fuga sit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reiciendis eius totam a doloremque ea ab neque optio enim quisquam ipsam harum assumenda unde tempore aliquid, impedit laudantium fugiat dicta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nulla a commodi illo labore. Eligendi pariatur nesciunt, accusamus eos ad corporis in aliquam laborum, libero illum eum possimus, repellat quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis dolore corporis nihil architecto laborum tempore sed iste quos, ratione natus illum dolor quo magnam, delectus ad fugit fuga sit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reiciendis eius totam a doloremque ea ab neque optio enim quisquam ipsam harum assumenda unde tempore aliquid, impedit laudantium fugiat dicta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nulla a commodi illo labore. Eligendi pariatur nesciunt, accusamus eos ad corporis in aliquam laborum, libero illum eum possimus, repellat quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis dolore corporis nihil architecto laborum tempore sed iste quos, ratione natus illum dolor quo magnam, delectus ad fugit fuga sit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reiciendis eius totam a doloremque ea ab neque optio enim quisquam ipsam harum assumenda unde tempore aliquid, impedit laudantium fugiat dicta!</p>
+    <div class="static">
+        <p>static</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nulla a commodi illo labore. Eligendi pariatur nesciunt, accusamus eos ad corporis in aliquam laborum, libero illum eum possimus, repellat quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis dolore corporis nihil architecto laborum tempore sed iste quos, ratione natus illum dolor quo magnam, delectus ad fugit fuga sit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reiciendis eius totam a doloremque ea ab neque optio enim quisquam ipsam harum assumenda unde tempore aliquid, impedit laudantium fugiat dicta!</p>
+    <div id="relative">
+        <p>relative</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nulla a commodi illo labore. Eligendi pariatur nesciunt, accusamus eos ad corporis in aliquam laborum, libero illum eum possimus, repellat quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis dolore corporis nihil architecto laborum tempore sed iste quos, ratione natus illum dolor quo magnam, delectus ad fugit fuga sit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reiciendis eius totam a doloremque ea ab neque optio enim quisquam ipsam harum assumenda unde tempore aliquid, impedit laudantium fugiat dicta!</p>
+    <!-- Criando outra div para realizar o teste -->
+    <div class="relative_teste">
+        <div id="absolute">
+            <p>absolute</p>
+        </div>
+    </div>
+    <div id="sticky">
+        <p>sticky</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nulla a commodi illo labore. Eligendi pariatur nesciunt, accusamus eos ad corporis in aliquam laborum, libero illum eum possimus, repellat quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis dolore corporis nihil architecto laborum tempore sed iste quos, ratione natus illum dolor quo magnam, delectus ad fugit fuga sit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reiciendis eius totam a doloremque ea ab neque optio enim quisquam ipsam harum assumenda unde tempore aliquid, impedit laudantium fugiat dicta!</p>
+    <div id="fixed">
+        <p>Fixed</p>
+    </div>
+    <div id="fixed1">
+        <p>Outro Exemplo</p>
+    </div>
+</body>
+</html>
