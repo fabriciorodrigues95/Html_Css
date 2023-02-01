@@ -1,4 +1,4 @@
 # Html_Css
  curso em video
  
-Estou aprendendo a criar sites e agora vou gerenciar meus repositórios.
+ Aprendendo a gerenciar o github
