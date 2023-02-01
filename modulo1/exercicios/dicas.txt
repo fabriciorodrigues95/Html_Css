@@ -1,0 +1,4 @@
+Modulo 1 aula 11 - Hospedagem de vídeos externos
+
+Site de hospedagem 
+Hostget

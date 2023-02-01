@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+       body{
+        font-family: Arial, Helvetica, sans-serif;
+       }
+    /* > significa que vamos maniputal só o elemento filho ou seja o elemento p. */
+    div > p{
+        /* Aqui vai desaparecer o texto escrito */
+        display: none;
+    }
+    /* Novamente trabalhando com o elemento filho
+    Fazendo o elemento aparecer quando passado por cima  */ 
+    div:hover > p{
+        /* Fica do tipo em bloco ou seja em baixo da frase Passe o mouse */
+        display: block;
+        color: white;
+        background-color: red;
+        width: 300px;
+    }
+    /* Aqui só irá mudar a cor do texto passe o mouse para vermelho */
+    div:hover{
+        color: red;
+    }    
+    </style>
+</head>
+<body>
+    
+    <h1>Exemplo de hover</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti rerum fuga quo, explicabo ratione facilis distinctio! Necessitatibus dicta sint, unde beatae nemo, illo maxime dolor tempora consectetur in, accusamus libero.</p>
+    <div>
+        Passe o mouse
+        <p>Texto escondido...</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

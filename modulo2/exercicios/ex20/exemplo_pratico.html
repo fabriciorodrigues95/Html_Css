@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../aprendendo_css.ico" type="image/x-icon">
+    <title>Praticando</title>
+    <style>
+        @font-face {
+            font-family: 'natal';
+            src: url(../ex017/ex026/fonts/natal.otf)format(opentype);
+        }
+        body{
+            font: normal 1em Arial,Helvetica, sans-serif;
+        }
+        h1{
+            color: rgba(0, 0, 255, 0.699);
+            font-family: 'natal';
+            text-align: center;
+        }
+        p > a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* o :visited serve para mostrar que o site já foi acessado, pelo menos uma vez. */
+        p > a:visited{
+            color: darkblue;
+        }
+        p > a:hover{
+            text-decoration: underline;
+        }
+        .especial:hover{
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+        .especial::before{
+            content: ' >>';
+            font-weight: lighter;
+        }
+        .especial::after{
+            content: '<<';
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo Html</h1>
+    <p>
+        Para aprender HTML5 e CSS3, acesse o
+        <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">
+            GitHub do Guanabara
+        </a>
+    </p>
+    <p>
+        Se quiser conhecer mais sobre os padrões, visite o site do
+        <a href="https://www.w3c.br" target="_blank" rel="external">Escritório do w3c no Brasil</a>
+    </p>
+    <p>Para acompanhar os cursos, acesse o
+        <a href="https://www.youtube.com/cursoemvideo/" class="especial" target="_blank" rel="external">Curo em vídeo no youtube</a>
+    </p>
+</body>
+</html>

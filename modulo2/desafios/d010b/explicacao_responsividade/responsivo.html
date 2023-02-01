@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Responsividade</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* Parte de fora */
+            background-color: gray;
+        }
+        main{
+            /*  */
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            /* Criando nossa responsividade */
+            min-width: 250px;
+            max-width: 800px;
+            /* Deixando centralizado */
+            margin: auto;
+
+        }
+        img{
+            /* Imagem ocupando 100% */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus necessitatibus aut voluptatem odio consequuntur fugiat assumenda vero enim vel, mollitia facere pariatur, in quidem quia velit earum perspiciatis quibusdam veritatis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio sapiente nemo provident fuga tempora iste unde hic voluptas temporibus at eius rem, exercitationem pariatur sint optio quia a <modi class="Lore"></modi></p>
+        <picture>
+            <!-- Aqui foi configurado duas imagens, adaptando a sua tela -->
+            <source media="(max-width:600px )" srcset="../img/irina-blok-pq.jpg">
+            <img src="../img/irina-blok.jpg" alt="irina-blok">
+        </picture>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur obcaecati eum, mollitia ducimus corrupti odio incidunt officia quis ipsa rem doloremque ad pariatur dolorum culpa blanditiis dignissimos doloribus velit quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem suscipit veritatis tempora ducimus accusantium? Voluptates aliquam labore deserunt dicta delectus enim doloribus magnam at placeat omnis nihil, iusto necessitatibus. Quidem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam similique eveniet quia ducimus molestias a dolore, ea nemo sunt itaque beatae facere, doloremque, omnis illum accusamus! Consectetur facilis eos similique?</p>
+    </main>
+</body>
+</html>

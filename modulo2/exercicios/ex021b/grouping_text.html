@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Text</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+        header{
+            background-color: white;
+            padding:10px;
+            margin: 10px;
+            
+        }
+        nav{
+            background-color: rgb(126, 119, 119);
+            padding: 3px;
+            /* Efeito de sombra */
+           box-shadow:2px 4px 10px 1px rgba(0, 0, 0, 0.466);/* Deslocamento horizontal, vertical,espalhamento e sombra  */
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+    
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: lightgray;
+        }
+        article aside{
+            background-color: rgb(202, 191, 191);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0;
+        }
+        footer > p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Aqui é era usado no html 4 e não é no formato semâtico  -->
+    <!-- <div>
+        <div id="cabecalho">
+            <h1>
+
+            </h1>
+            <div id="menu">
+
+            </div>
+
+        </div>
+        <div id="conteudo">
+
+        </div>
+        <div id="rodape">
+
+        </div>
+    </div> -->
+
+    <!-- Formato semântico -->
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Meu site</h1>
+        <!-- Menu de navegação -->
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <!-- Conteudo Principal -->
+    <main>
+        <!-- Seção -->
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <!-- Artigos -->
+            <article>
+                <h2>Notícias sobre a Copa do mundo</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ducimus similique maiores error unde id vel necessitatibus quasi rerum nam quis debitis numquam, nesciunt repellendus dolor incidunt, quibusdam vitae odio.</p>
+                <!-- parte do artigo -->
+                <aside>
+                    <p>Artigo escrito por José</p>
+                </aside>
+            </article>
+
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por Fabricio</p>
+    </footer>
+
+</body>
+</html>

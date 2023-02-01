@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+            /* Espessura da borda
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgray; */
+           
+            /* criamos um softhand (simplificando)*/
+            border: 10px solid darkblue;
+            padding: 10px 10px 10px 10px;/*top,right,bottom,left */
+            outline: 9px dotted aqua;/* Parte exterior, próximo ao margin. */
+            margin-left: 20px;
+
+          display: inline-block; 
+        }
+        a{
+            border: 2px solid darkred;
+            
+        }
+        p{
+            text-align: justify;
+            margin-left: 35px;
+            position: absolute;
+            left: 350px;
+            top: 10px;
+           
+        }
+        img{
+            position: absolute;
+            top: 50px;
+            margin-left: 30px;
+        }
+        div{
+            display: inline-block;
+            word-wrap: break-word;
+           
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="alinhamento">
+        <h1>Exemplo de caixa</h1>
+        <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+        <img src="box_model.png" alt="">
+    </div>
+</body>
+</html>

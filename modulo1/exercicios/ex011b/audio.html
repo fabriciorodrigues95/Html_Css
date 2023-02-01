@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aúdio</title>
+    <link rel="shortcut icon" href="../echosoft.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Aprendendo a manipular áudio</h1>
+    <picture>
+        <source media="(max-width: 502px )" srcset="../ex011/img/img_cao_min.jpg" type="image/jpeg">
+        <source media="(max-width: 750px )" srcset="../ex011/img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="../ex011/img/foto-m.png" type="image/png">
+        <img src="../ex011/img/foto-g.png" alt="Estudo de imagens">
+    </picture>
+    
+    <h1>Aprendendo a reproduzir áudios em html</h1>
+    <p>Vamos colocar um som para tocar!</p>
+    <audio src="midia/guanacast-33.mp3" controls>Guanabara Cast</audio>
+    <audio src="midia/happy-mistake.mp3" controls>Happy mistake</audio>
+    <audio src="midia/Organic Guitar House - Dyalla.mp3" contr>Google</audio>
+    <h2>Outro método de adicionar áudios</h2>
+    <!--
+         atributos usado dentro do audio preload
+         .auto -> Não recomendado, começa a tocar automaticamente, pesa demais no site, principalmente celular
+         .metadata -> Carrega só algumas informações, nada de áudio 
+         .none - > Nenhum, só quando clicar no play
+        
+        - audio preload="auto" autoplay
+        - audio preload="metadata"  controls
+        - audio preload ="none" loop 
+        -audio preload ="metadata"  controls loop
+     -->
+    <audio preload=""  controls loop>
+        <!-- Aqui podemos por vários formatos e segue uma hierarquia então primeiro mp3, ogg e wav ... -->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <!-- Não recomendado usar o formato wav, muito pesado -->
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+    </audio>
+    <p>Infelizmente não foi possível carregar nenhum formato de áudio, <a href="midia/guanacast-33.mp3">clique aqui para baixar o arquivo.</a></p>
+    
+
+</body>
+</html>

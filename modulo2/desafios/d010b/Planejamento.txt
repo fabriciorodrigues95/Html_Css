@@ -1,0 +1,8 @@
+Planejamento a estrutura do site
+Layout : https://wireframepro.mockflow.com/#/space/M283Zxmv8ob
+Cores #0E4720,#63E08B,#26C759,#194728,#1C9442,#c5ebd6
+fontes: <style> @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&family=Fredericka+the+Great&display=swap'); </style>
+
+família de fontes: 'Bebas Neue', cursivo;
+família de fontes: '
+família de fontes: 'Fredericka, o Grande', cursivo;

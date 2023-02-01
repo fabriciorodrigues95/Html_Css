@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="../../../../aprendendo_css.ico" type="image/x-icon" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,100;1,400&display=swap");
+
+        * {
+            font-family: "Work Sans", sans-serif;
+        }
+
+        body {
+            font-weight: normal;
+            /* lighter(mais leve),normal(normal),bold(escura - negrito) e bolder (mais escura ainda - negrito)*/
+            /* 
+            Weight =peso
+            width=largura
+            hight=altura 
+            */
+            font-style: italic;
+        }
+
+        h1 {
+            /* font-weight: bolder;
+        font-size: 3em;
+        font-style: italic; */
+
+            /* Trabalhando com shorthand
+        Em vez de declarar desde peso, tamanho e estilo é possível declarar em uma linha só, seguindo esta ordem.
+        font-style -> font-weight -> font-size -> font-family
+        */
+            font: italic bolder 3em "Work Sans", sans-serif;
+            /* Em uma única linha, usando o método shorthand (dar uma mãozinha) */
+
+
+        }
+
+        h2 {
+            /* Temos a opção ainda de trabalhar com números que vão de 100-900 */
+            /* font-weight: 400; */
+            /* Lighter normal bold bolder */
+            font: bold 2em "Work Sans", sans-serif;
+
+        }
+
+        .avisos {
+            color: red;
+            font: bold 2em "Work Sans", sans-serif;
+        }
+
+        #tex1 {
+            text-decoration: underline;
+        }
+
+        #tex2 {
+            text-decoration: underline blue;
+        }
+
+        #tex3 {
+            text-decoration: overline red;
+
+        }
+
+        #tex4 {
+            text-decoration: line-through blueviolet;
+        }
+
+        #tex5 {
+            text-decoration: underline overline orange;
+
+        }
+
+        #tex6 {
+            text-decoration: overline dotted red;
+
+        }
+
+        /* Juntando todos */
+        #tex7 {
+            text-decoration: underline overline dotted rgb(247, 74, 247);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <h2>Peso, estilo e shortland</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima
+        velit sed adipisci distinctio fuga id explicabo. Quidem placeat provident
+        est tenetur? Vero recusandae voluptatum maiores doloremque dolore quaerat
+        iste.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, officia
+        labore. Praesentium quaerat natus ipsam iste est quod non necessitatibus
+        eveniet, fugit culpa nesciunt odit eaque mollitia atque corrupti impedit.
+    </p>
+    <h2 class="avisos">Aviso importante</h2>
+    <p>Não são todas as fontes que dão para fazer essa configuração, a fonte para ser usado com italico, peso e
+        shortland tem que possuir a opção, essa só deixa eu colocar o peso da fonte, como comentado lá na parte do css.
+    </p>
+    <p>
+        Então relembrando podemos no css usar, <b>font-size</b> como <b>px</b> ou <b>em</b>, <b>font-weight</b> que vai
+        ajustar o peso da fonte. Agora o estilo da fonte usando <b>font-style</b> e outra configuração que é possível a
+        se fazer é o <b>tex-decoration</b>.
+    <ul>
+        <li>Tamanho da fonte</li>
+        <ul type="circle">
+            <li>em</li>
+            <li>px</li>
+        </ul>
+        <li>Peso da fonte</li>
+        <ul type="circle">
+            <li>lighter</li>
+            <li>normal</li>
+            <li>bold</li>
+            <li>bolder</li>
+        </ul>
+        <li>Estilo da fonte </li>
+        <ul type="circle">
+            <li>italic</li>
+            <li>oblique</li>
+            <li>normal</li>
+        </ul>
+        <li>decoração da fonte</li>
+        <ul type="circle">
+            <li>underline</li>
+            <li>overline</li>
+            <li>line-through</li>
+            <li>overline</li>
+            <li>dotted</li>
+        </ul>
+    </ul>
+    </p>
+    <h3>Fazendo os exemplo de decoração das fontes</h3>
+    <p id="tex1">alguma cosia</p>
+    <p id="tex2">alguma coisa</p>
+    <p id="tex3">alguma cosia</p>
+    <p id="tex4">alguma coisa</p>
+    <p id="tex5">alguma cosia</p>
+    <p id="tex6">alguma coisa</p>
+    <p id="tex7">alguma coisa</p>
+</body>
+
+</html>

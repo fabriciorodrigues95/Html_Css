@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../../aprendendo_css.ico" type="image/x-icon">
+    <title>Fontes externas</title>
+    <style>
+    @font-face{
+        font-family: 'love';
+        src: url('fonts/love.ttf') format(truetype);
+        /* Tipos de formatos
+        opentype: (otf)
+        truetype (ttf)
+        embedded - opentype
+        truetype-aat (apple advanced Typography)
+        svg */;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'natal';
+        src: url(fonts/natal.otf) format(opentype);
+    }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'love', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+            
+        }
+        h2{
+            font-family: 'natal';
+            font-weight: normal;
+            font-size: 2.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo colocar fontes externas</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae cumque sit quidem praesentium nisi blanditiis eos itaque odio nihil iusto accusamus corporis, ipsam vitae facere perferendis quis minima quae fugit!</p>
+    <h2>Agora eu aprendo css!</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quis amet nihil impedit aperiam! Ea consequuntur ullam, voluptates magnam vitae numquam deleniti, cum veniam possimus modi quidem provident aliquid praesentium.</p>
+</body>
+</html>
