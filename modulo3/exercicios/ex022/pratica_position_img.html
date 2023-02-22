@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição da Imagens</title>
+    <style>
+        body{
+            background-color:#dad6d69d ;
+        }
+        section{
+            background-image: url(img/wallpaper004.jpg);
+            height: auto;
+           
+        }
+        .titulo{
+           text-align: center;
+        }
+        p{
+            margin-left:10px;
+            text-indent: 30px;
+            word-wrap: break-word;
+        }
+        .imagem{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .conteudo_mascote{
+            max-width: 1241px;
+            height: 257px;
+            margin: 0 auto;
+            background-color: #b4b3b39d;
+            
+        }
+        .mascote-texto{
+            width: 1051px;
+            display: flex;
+
+        }
+        .mascote img{
+            /* Inverte a imagem */
+            transform: scaleX(-1);
+            position: relative;
+            top: 10px;
+            right: 20px;
+            width: 120px;
+        }
+        .mascote-texto .texto{
+           font-size: 30px;
+           
+        }
+        .mascote-texto .texto .primeiro{
+            padding-left: 50px;
+        }
+        .mascote-texto .texto .segundo{
+            margin-left: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="posicao_principal">
+        <div class="conteudo">
+            <h1 class="titulo">Trabalhando com posição de imagens, segue o que da para ser feito, seguindo a imagem abaixo:</h1>
+            <div class="imagem">
+                <img src="img/Positions.png" alt="Posicao da Imagem">
+            </div>
+            <h1 class="titulo">O fundo não precisa ter só cor </h1>
+            <p>
+                Em capítulos anteriores, aprendemos a aplicar cores sólidas ou degradê em qualquer 
+                elemento de caixa. Mas você não precisa se limitar a essa possibilidade e pode aplicar 
+                imagens ao fundo de qualquer elemento exibido visualmente em HTML. Vamos a um 
+                exemplo simples com três &lt;div &gt; no corpo de um documento: 
+            </p>
+            <div class="imagem"><img src="img/codigos_mg/codigo1.png" alt=""></div>
+            <p>
+                Agora vamos criar a configuração de estilo base para toda &lt; div &gt; que possui a classe quadrado:
+            </p>
+            <div class="imagem"><img src="img/codigos_mg/codigo2.png" alt=""></div>
+            <p>Com esse código aplicado, temos o seguinte resultado na tela:</p>
+            <div class="imagem"><img src="img/codigos_mg/codigo3.png" alt=""></div>
+            <p>Viu? Resultado simples, três quadrados exatamente iguais na tela.</p>
+            <div class="conteudo_mascote">
+                <div class="mascote-texto">
+                    <div class="mascote">
+                        <img src="img/codigos_mg/mascote.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <p><div class="primeiro">NÃO ENTENDEU? Se você criou o código acima, mas não obteve o</div> <div class="segundo">resultado apresentado, é sinal de que talvez você esteja tentando </div>correr demais com seu aprendizado. Se eu puder te dar um conselho, volte ao capítulo 16 e faça todos os exercícios.</p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Agora vamos adicionar algumas configurações individualmente a cada quadrado, usando os identificadores diferentes entre eles:
+             </p>
+            <div class="imagem"><img src="img/codigos_mg/codigo4.png" alt=""></div>
+            <p>
+                Note que na definição da &lt;div&gt; que tem o id com o valor q1, usamos uma cor sólida, já para q2, usamos um preenchimento linear. Já na caixa q3, vamos aplicar uma imagem de fundo através de um endereço informado pela função url(). 
+            </p>
+            <div class="conteudo_mascote">
+                <div class="mascote-texto">
+                    <div class="mascote">
+                        <img src="img/codigos_mg/mascote.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <p><div class="primeiro">CADÊ AS IMAGENS? Se você quer as imagens que usaremos nesse</div> <div class="segundo">capítulo, acesse nosso repositório em https://github.com/ </div><div class="terceiro">gustavoguanabara/html-css/tree/master/exercicios/ex022. Lá</div>
+                        você vai encontrar a pasta com várias imagens que usaremos.</p>
+                    </div>
+                </div>
+            </div><!-- Final da clas conteudo_mascote -->
+            <p>Ao adicionar as linhas acima ao código, o resultado já muda consideravelmente:</p>
+            <div class="imagem"><img src="img/codigos_mg/codigo5.png" alt=""></div>
+            <p>De forma geral, essas são as três maneiras mais simples de preencher uma caixa em HTML: cor sólida, degradê ou imagem de fundo. </p>
+            <h1 class="titulo">E não se esqueça: o body é uma grande caixa </h1>
+            <p>
+                Esse recurso também pode ser usado ao &lt;body&gt; do seu site e o papel de parede será aplicado. Vamos considerar um exemplo bem simples que usa uma imagem disponível no nosso repositório.
+             </p>
+            <div class="imagem"><img src="img/codigos_mg/codigo6.png" alt=""></div>
+            <p>
+                Analisando o código acima, estamos usando uma url() externa, já que a imagem estará em outro servidor (no caso, no servidor do GitHub). A imagem em questão é razoavelmente pequena, então não vai ser suficiente para cobrir toda a tela. Sendo assim, o resultado será o seguinte: 
+            </p>  
+            <div class="imagem"><img src="img/codigos_mg/codigo7.png" alt=""></div> 
+            <h1 class="titulo">Personalizando a aplicação do background</h1>
+            <p>
+                Quando o tamanho da caixa é maior que o tamanho da imagem, por padrão, a imagem será repetida nos dois eixos (eixo x e eixo y) quantas vezes for necessário para cobrir a extensão da caixa contêiner. 
+            </p>
+            <p>
+                É possível alterar esse comportamento usando a propriedade background-repeat, que aceita os seguintes valores: 
+            </p>
+            <div class="imagem"><img src="img/codigos_mg/codigo8.png" alt=""></div> 
+            <p>
+                Note que ao usar o no-repeat, isso não obriga o navegador a aumentar ou diminuir o tamanho da imagem para caber no tamanho da caixa. Para realizar essa adaptação, devemos usar outra propriedade, que veremos mais adiante. 
+            </p>
+            <p>
+                Além de escolher o nível de repetição do background, também podemos mudar a posição de referência de início das repetições. Por padrão, é considerado o canto esquerdo superior (left top), mas podemos ter várias opções. Use a imagem abaixo como referência sempre que precisar definir a posição do fundo com a propriedade background-position no seu código. 
+            </p>
+            <div class="imagem"><img src="img/codigos_mg/codigo9.png" alt=""></div> 
+            <p>
+                Outra coisa que podemos fazer é redimensionar a imagem para forçá-la a caber na caixa. Por padrão, nenhum redimensionamento será aplicado, e a imagem será exibida do seu tamanho natural. Porém, podemos usar a propriedade background- size para alterar esse comportamento. 
+            </p>
+            <p>
+                Os valores aceitos por essa propriedade são: 
+            </p>
+            <div class="imagem"><img src="img/codigos_mg/codigo10.png" alt=""></div> 
+            <div class="conteudo_mascote">
+                <div class="mascote-texto">
+                    <div class="mascote">
+                        <img src="img/codigos_mg/mascote.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <p><div class="primeiro">SÓ CONSIGO DEMONSTRAR NA PRÁTICA. Essas propriedades de</div> <div class="segundo">personalização de imagens de fundo precisam de demonstração</div><div class="terceiro">prática. Nesse exato momento, já gravei vários vídeos ensinando o uso</div>
+                        <div class="quarta">de cada uma delas. Em breve você verá, basta acompanhar o canal</div>Curso em Vídeo no YouTube &#x1F596;&#x1F913; </p>
+                    </div>
+                </div>
+            </div><!-- Final da clas conteudo_mascote -->
+            <p>
+                A última propriedade que podemos configurar é o vínculo (attachment) da imagem de fundo com o resto do documento, principalmente se o conteúdo for maior do que a altura da página e seja necessário vazar uma rolagem vertical. 
+            </p>
+            <p>
+                A propriedade backgroud-attachment aceita os valores:
+            </p>
+            <div class="imagem"><img src="img/codigos_mg/codigo11.png" alt=""></div>
+            <h1 class="titulo">Simplificando as coisas </h1>
+            <p>
+                Assim como já vimos várias vezes em nosso material, existe também a possibilidade de usar uma shorthand para simplificar o uso de propriedades que se apliquem ao fundo de uma caixa. A propriedade abreviada background pode ser declarada agrupando as seguintes configurações: 
+            </p>
+            <ul>
+                <li>background-color </li>
+                <li>background-image </li>
+                <li>background-position</li>
+                <li>background-repeat </li>
+                <li>background-attachment</li>
+            </ul>
+            <p>Sendo assim, no lugar de usar:</p>
+            <div class="imagem"><img src="img/codigos_mg/codigo12.png" alt=""></div>
+            <p>Podemos reunir tudo em uma única declaração: </p>
+            <div class="imagem"><img src="img/codigos_mg/codigo13.png" alt=""></div>
+        </div><!-- Conteudo -->
+    </section>
+</body>
+</html>
