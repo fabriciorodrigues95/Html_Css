@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical de caixas</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+        #container{
+            background-image: url(img/target001.png);
+            height: 96vh;
+            background-color: purple;
+            position: relative;
+            background-size: 100% 100%;
+            padding: 10px;
+
+        }
+        #conteudo{
+            /* margin: auto; -> alinhamento horizontal */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 400px;
+            height: 200px;  
+            background-size: 100% 100%;
+            background-color: yellow;
+            background-image: url(img/target001.png);
+            /*  Aqui consigo trabalhar com meu elemento, no caso centralizando o elemento*/
+            transform: translate(-50%, -50%);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Observação:
+        Trabalho com o meu container na posição relativa e o meu conteúdo na posição absoluta, assim dando flexibilidade para que eu possa mexer como achar melhor e o elemento do meu conteúdo irá se comportar relativo a minha página body e não a do meu container.
+    -->
+    <!-- Div semântica -->
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

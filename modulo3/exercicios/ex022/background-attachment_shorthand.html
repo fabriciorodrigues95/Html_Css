@@ -10,14 +10,20 @@
         body{
             height: 100vh;
             background-color: black;
+            
             background-image: url(img/wallpaper002.jpg);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
             /* scroll ou fixed */
-            background-attachment:fixed ;
+            background-attachment:fixed ;/* Vínculo -> attachment */
             /* Shorthand-backgroud 
             color > image > position > repeat > [size] >attachment
+
+            Até o momento dos testes o size não estava sendo suportado pelos navegadores, mas na documentação diz que há possibilidade.
+
+            backgroud:black url(img/wallpaper002.jpg) center center             no-repeat fixed
+            backgroud-siza:cover (essa é a opção para funcionar, no shorthand não há possibilidade.)
             */
 
         }
