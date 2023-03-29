@@ -4,3 +4,43 @@
     padding: 0;
     box-sizing: content-box;
 }
+html, body{
+    min-width: 100vh;
+    background-color: darkgray;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    /* Duas opções de deixar a leta maiuscula */
+    /*
+     text-transform: uppercase;
+     ou
+      font-variant: small-caps;
+     */
+     font-variant: small-caps;
+}
+header > p {
+    padding-bottom: 50px;
+    padding-top: 10px;
+
+}
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+    color: blueviolet;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
