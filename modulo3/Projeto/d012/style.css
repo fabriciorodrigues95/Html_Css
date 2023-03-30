@@ -38,6 +38,25 @@ header a:hover, footer a:hover{
     color: blueviolet;
 
 }
+section{
+    /* font-size:20px; */
+    padding-left: 30px;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(56, 55, 55);
+    color: white;
+}
+section.imagem p{
+    background-color: rgba(0, 0, 0, 0.096);
+    width: 400px;
+}
 footer{
     background-color: black;
     color: white;
